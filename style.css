@@ -1,0 +1,136 @@
+
+/*Overall Structue */
+
+body {
+  background-image:url(images/bodybg.jpg);
+  margin:0;
+}
+
+header, footer {
+  background-color:aliceblue;
+  background-image:url(images/headerbg.jpg);
+  margin: 0;
+  text-align: center;
+}
+
+header {height: 160px;}
+footer {height: 80px;}
+
+.wrapper {
+  width: 580px;
+  margin: auto;
+}
+
+img, iframe {
+  width:100%;
+  border-radius: 10px;
+}
+
+
+/* Header & Footer */
+
+header h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 45px;
+  padding-top: 30px;
+} 
+
+header p { 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 18;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer p {
+  color: white; 
+  padding-top: 30px;
+}
+
+/* Type */
+
+h1, h2 {
+  color: rgb(25, 36, 36);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 550
+}
+
+p, li {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(25, 36, 36);
+  font-size: 18px;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:link {color:#63A088}
+a:visited {color: #56203D}
+a:hover {color: #56638A}
+a:active {color: #53DD6C}
+
+
+
+/* Elements */
+
+hr {
+  border: .2px solid black;
+}
+
+/* Spacers */
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+
+/* Groups */
+
+.group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.item { 
+  flex: 1;
+  margin: 10px;
+}
+
+/* Desktop */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
